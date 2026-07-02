@@ -23,7 +23,7 @@
 
 ## 🔗 Live Demo
 
-> **[🚀 View the live demo](https://REPLACE-WITH-YOUR-VERCEL-URL.vercel.app)**  ← _deploy to Vercel and drop your URL here_
+> ### 🔗 [**Live demo → flowforge-liart.vercel.app**](https://flowforge-liart.vercel.app/)
 
 > _Tip: add a screenshot or GIF to `public/preview.png` and reference it here — `![Preview](public/preview.png)` — so the repo is readable at a glance._
 
