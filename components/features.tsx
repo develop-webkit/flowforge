@@ -1,13 +1,13 @@
 import { Reveal } from "@/components/reveal";
-import { Bot, Gauge, Lock, LineChart, Puzzle, Workflow } from "lucide-react";
+import { Blocks, Boxes, Cable, Gauge, LineChart, ShieldCheck } from "lucide-react";
 
 const features = [
-  { icon: Bot, title: "AI automations", desc: "Describe a task in plain English and let Nova build the workflow for you." },
-  { icon: Workflow, title: "Visual builder", desc: "Drag, drop, and connect steps to design pipelines without writing code." },
-  { icon: LineChart, title: "Real-time analytics", desc: "Track every metric that matters with dashboards that update live." },
-  { icon: Puzzle, title: "100+ integrations", desc: "Connect the tools your team already uses in a couple of clicks." },
-  { icon: Lock, title: "Enterprise security", desc: "SOC 2 Type II, SSO, and role-based access control out of the box." },
-  { icon: Gauge, title: "Blazing fast", desc: "Edge-rendered and optimized for a 95+ Lighthouse score everywhere." },
+  { icon: Blocks, title: "Done-for-you setup", desc: "Share your process; we design and build the full n8n workflow. No nodes to wire up yourself." },
+  { icon: Cable, title: "API attachment", desc: "Connect any app or internal API — OAuth, webhooks, REST, GraphQL, and custom nodes included." },
+  { icon: Boxes, title: "Managed hosting", desc: "We run your workflows on isolated, auto-scaling infrastructure. No servers for you to babysit." },
+  { icon: LineChart, title: "Usage-based billing", desc: "Pay for the executions you actually run each month. Clear limits, no surprise invoices." },
+  { icon: ShieldCheck, title: "Secure by default", desc: "Encrypted credentials, isolated tenants, audit logs, and EU/US data residency options." },
+  { icon: Gauge, title: "Monitoring & alerts", desc: "Live run history, retries, and Slack/email alerts the moment a workflow needs attention." },
 ];
 
 export function Features() {
@@ -17,10 +17,10 @@ export function Features() {
         <Reveal className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-semibold uppercase tracking-wider text-indigo-500">Features</p>
           <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
-            Everything your team needs to move faster
+            Automation, handled end to end
           </h2>
           <p className="mt-4 text-slate-600 dark:text-slate-300">
-            A single platform that replaces a dozen disconnected tools.
+            From the first workflow to hosting and monitoring — we own the whole stack so you don&apos;t have to.
           </p>
         </Reveal>
 

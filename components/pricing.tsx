@@ -8,28 +8,28 @@ import { cn } from "@/lib/utils";
 const tiers = [
   {
     name: "Starter",
-    monthly: 0,
-    yearly: 0,
-    desc: "For individuals getting started.",
-    features: ["1 workspace", "Up to 3 automations", "Community support"],
-    cta: "Start for free",
+    monthly: 29,
+    yearly: 23,
+    desc: "For your first automation.",
+    features: ["2 active workflows", "5,000 executions / mo", "Standard API connections", "Email support"],
+    cta: "Book a call",
     featured: false,
   },
   {
-    name: "Pro",
-    monthly: 24,
-    yearly: 19,
-    desc: "For growing teams that ship fast.",
-    features: ["Unlimited automations", "Real-time analytics", "100+ integrations", "Priority support"],
-    cta: "Start free trial",
+    name: "Growth",
+    monthly: 99,
+    yearly: 79,
+    desc: "For teams scaling automations.",
+    features: ["15 active workflows", "50,000 executions / mo", "Custom API + webhook connections", "Monitoring & alerts", "Priority support"],
+    cta: "Book a call",
     featured: true,
   },
   {
-    name: "Enterprise",
-    monthly: 79,
-    yearly: 64,
-    desc: "For organizations at scale.",
-    features: ["SSO & SAML", "Advanced security", "Dedicated manager", "99.99% uptime SLA"],
+    name: "Scale",
+    monthly: 299,
+    yearly: 239,
+    desc: "For business-critical workloads.",
+    features: ["Unlimited workflows", "500,000 executions / mo", "Dedicated automation engineer", "SSO + audit logs", "99.9% uptime SLA"],
     cta: "Contact sales",
     featured: false,
   },
@@ -43,8 +43,10 @@ export function Pricing() {
       <div className="container">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-semibold uppercase tracking-wider text-indigo-500">Pricing</p>
-          <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Simple, transparent pricing</h2>
-          <p className="mt-4 text-slate-600 dark:text-slate-300">Start free. Upgrade when you grow.</p>
+          <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Pay for what you run</h2>
+          <p className="mt-4 text-slate-600 dark:text-slate-300">
+            Build fees are one-time and scoped per project. Hosting is billed monthly by usage.
+          </p>
 
           <div className="mt-8 inline-flex items-center gap-3 rounded-full border border-slate-200 p-1 dark:border-white/10">
             <button
@@ -92,7 +94,7 @@ export function Pricing() {
                 >
                   ${yearly ? t.yearly : t.monthly}
                 </motion.span>
-                <span className="mb-1 text-sm text-slate-500 dark:text-slate-400">/mo</span>
+                <span className="mb-1 text-sm text-slate-500 dark:text-slate-400">/mo hosting</span>
               </div>
               <ul className="mt-6 flex-1 space-y-3">
                 {t.features.map((f) => (
@@ -116,6 +118,9 @@ export function Pricing() {
             </div>
           ))}
         </div>
+        <p className="mt-8 text-center text-sm text-slate-500 dark:text-slate-400">
+          Need more? Additional executions are billed at $1 per 1,000. Cancel or change plans anytime.
+        </p>
       </div>
     </section>
   );

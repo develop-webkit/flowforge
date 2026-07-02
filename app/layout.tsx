@@ -6,13 +6,13 @@ import { ThemeProvider } from "@/components/theme-provider";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "Nova — Ship products faster with AI",
+  title: "FlowForge — Custom n8n workflows, built & hosted for you",
   description:
-    "Nova is the all-in-one platform that helps modern teams automate workflows, ship faster, and scale with confidence. Built with Next.js, TypeScript, Tailwind CSS, and Framer Motion.",
-  keywords: ["SaaS", "Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    "FlowForge builds custom n8n automation workflows for your business, connects them to your APIs, and hosts them on managed infrastructure — billed by monthly usage. Simple setup, no node-wrangling.",
+  keywords: ["n8n", "automation", "workflows", "API integration", "managed hosting", "no-code", "SaaS"],
   openGraph: {
-    title: "Nova — Ship products faster with AI",
-    description: "The all-in-one platform for modern teams.",
+    title: "FlowForge — Custom n8n workflows, built & hosted for you",
+    description: "Done-for-you n8n automations: simple setup, API attachment, and managed hosting billed by monthly usage.",
     type: "website",
   },
 };

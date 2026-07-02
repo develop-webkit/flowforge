@@ -1,7 +1,8 @@
-<h1 align="center">✨ Nova — Animated SaaS Landing Page</h1>
+<h1 align="center">⚙️ FlowForge</h1>
 
 <p align="center">
-  A production-ready, fully responsive SaaS landing page with dark mode, scroll animations, and an interactive pricing section — built with <b>Next.js 14</b>, <b>TypeScript</b>, <b>Tailwind CSS</b>, and <b>Framer Motion</b>.
+  <b>Custom n8n workflows — built, connected, and hosted for you.</b><br/>
+  Marketing site for a done-for-you automation service: simple setup, API attachment, and managed hosting billed by monthly usage.
 </p>
 
 <p align="center">
@@ -24,77 +25,77 @@
 
 > **[🚀 View the live demo](https://REPLACE-WITH-YOUR-VERCEL-URL.vercel.app)**  ← _deploy to Vercel and drop your URL here_
 
-> _Tip: add a screenshot or GIF here — it makes the repo instantly readable. Take one of the running app and save it to `public/preview.png`, then reference it: `![Preview](public/preview.png)`._
+> _Tip: add a screenshot or GIF to `public/preview.png` and reference it here — `![Preview](public/preview.png)` — so the repo is readable at a glance._
+
+## 📖 About
+
+FlowForge is a productized service that builds **custom n8n automation workflows** for growing teams,
+connects them to the customer's APIs, and runs them on **managed, auto-scaling hosting** — billed by
+monthly usage. This repository contains the marketing site: a fast, animated, fully responsive
+landing experience plus legal pages.
 
 ## ✨ Features
 
-- ⚛️ **Next.js 14 App Router** with the modern `app/` directory and React Server Components
+- ⚛️ **Next.js 14 App Router** with React Server Components and multiple routes (`/`, `/privacy`, `/terms`)
 - 🔤 **100% TypeScript** in strict mode
 - 🎨 **Tailwind CSS** design system with a custom dark theme
-- 🌗 **Dark / light mode** with system preference detection (`next-themes`), no flash on load
-- 🎬 **Framer Motion** — hero entrance, animated gradient blobs, scroll-reveal, animated chart bars
-- 💳 **Interactive pricing** with a monthly/yearly toggle and live price updates
-- 📱 **Fully responsive** with an animated mobile menu
-- ♿ **Accessible** — semantic HTML, keyboard-friendly, ARIA labels
-- ⚡ **Performance-first** — targets a 95+ Lighthouse score
+- 🌗 **Dark / light mode** with system detection (`next-themes`), no flash on load
+- 🎬 **Framer Motion** — animated hero, live workflow-preview mock, scroll reveals, animated mobile menu
+- 💳 **Usage-based pricing** section with a monthly/yearly toggle and animated price updates
+- 📄 **Legal pages** — full Privacy Policy and Terms of Service, server-rendered with per-page metadata
+- 📱 **Fully responsive** and ♿ **accessible** (semantic HTML, ARIA, keyboard-friendly)
+- ⚡ **Performance-first** — statically rendered, targets a 95+ Lighthouse score
 
 ## 🧱 Tech Stack
 
-| Area          | Tools                                             |
-| ------------- | ------------------------------------------------- |
-| Framework     | Next.js 14 (App Router)                           |
-| Language      | TypeScript (strict)                               |
-| Styling       | Tailwind CSS, custom utilities                    |
-| Animation     | Framer Motion                                     |
-| Theming       | next-themes                                       |
-| Icons         | lucide-react                                      |
-| Deployment    | Vercel                                            |
+| Area       | Tools                          |
+| ---------- | ------------------------------ |
+| Framework  | Next.js 14 (App Router)        |
+| Language   | TypeScript (strict)            |
+| Styling    | Tailwind CSS                   |
+| Animation  | Framer Motion                  |
+| Theming    | next-themes                    |
+| Icons      | lucide-react                   |
+| Deployment | Vercel                         |
 
 ## 🚀 Getting Started
 
 ```bash
-# 1. Install dependencies
-npm install
-
-# 2. Run the dev server
-npm run dev
-
-# 3. Open http://localhost:3000
-```
-
-Build for production:
-
-```bash
-npm run build && npm start
+npm install       # install dependencies
+npm run dev       # start the dev server → http://localhost:3000
+npm run build     # production build
 ```
 
 ## 📂 Project Structure
 
 ```
-.
-├── app/
-│   ├── globals.css        # Tailwind layers + custom utilities
-│   ├── layout.tsx         # Root layout, fonts, theme provider
-│   └── page.tsx           # Landing page composition
-├── components/
-│   ├── navbar.tsx         # Sticky nav + animated mobile menu
-│   ├── hero.tsx           # Animated hero + app-preview mock
-│   ├── features.tsx       # Feature grid with hover effects
-│   ├── how-it-works.tsx   # 3-step section
-│   ├── testimonials.tsx   # Social proof
-│   ├── pricing.tsx        # Interactive monthly/yearly pricing
-│   ├── cta.tsx            # Call-to-action banner
-│   ├── footer.tsx         # Footer
-│   ├── reveal.tsx         # Reusable scroll-reveal wrapper
-│   └── theme-*.tsx        # Theme provider + toggle
-└── lib/utils.ts           # `cn()` class-merge helper
+app/
+├── layout.tsx          # Root layout, fonts, theme provider, metadata
+├── page.tsx            # Landing page composition
+├── privacy/page.tsx    # Privacy Policy
+└── terms/page.tsx      # Terms of Service
+components/
+├── navbar.tsx          # Sticky nav + animated mobile menu
+├── hero.tsx            # Animated hero + workflow-preview mock
+├── logo-cloud.tsx      # "Connect the tools you run" marquee
+├── features.tsx        # Feature grid
+├── how-it-works.tsx    # 3-step section
+├── testimonials.tsx    # Customer quotes
+├── pricing.tsx         # Interactive usage-based pricing
+├── cta.tsx             # Call to action
+├── footer.tsx          # Footer with legal links
+├── legal-shell.tsx     # Shared layout for legal pages
+├── reveal.tsx          # Reusable scroll-reveal wrapper
+├── brand.tsx           # Logo / wordmark
+└── theme-*.tsx         # Theme provider + toggle
+lib/utils.ts            # `cn()` class-merge helper
 ```
 
 ## ☁️ Deploy
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
 
-Push to GitHub, import the repo in [Vercel](https://vercel.com/new), and it deploys with zero configuration.
+Import the repo in [Vercel](https://vercel.com/new) and it deploys with zero configuration.
 
 ## 📄 License
 

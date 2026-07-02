@@ -1,9 +1,9 @@
 import { Reveal } from "@/components/reveal";
 
 const steps = [
-  { n: "01", title: "Connect your stack", desc: "Plug in the tools you already use — no migration, no downtime." },
-  { n: "02", title: "Describe the outcome", desc: "Tell Nova what you want in plain English and it drafts the workflow." },
-  { n: "03", title: "Ship & scale", desc: "Launch in minutes and watch results roll in on live dashboards." },
+  { n: "01", title: "Share your process", desc: "Hop on a 20-minute call or send a Loom. We scope the automation and the APIs it needs to touch." },
+  { n: "02", title: "We build & connect", desc: "We design the n8n workflow, wire up your APIs and credentials, and test it against real data." },
+  { n: "03", title: "We host & monitor", desc: "Your workflow goes live on managed hosting. You pay monthly for the executions you run — that's it." },
 ];
 
 export function HowItWorks() {
@@ -12,7 +12,7 @@ export function HowItWorks() {
       <div className="container">
         <Reveal className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-semibold uppercase tracking-wider text-indigo-500">How it works</p>
-          <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Live in three simple steps</h2>
+          <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">From idea to live automation in days</h2>
         </Reveal>
 
         <div className="mt-14 grid gap-6 md:grid-cols-3">

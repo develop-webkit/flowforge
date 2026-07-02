@@ -2,15 +2,16 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Menu, Sparkles, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { Brand } from "@/components/brand";
 import { cn } from "@/lib/utils";
 
 const links = [
-  { label: "Features", href: "#features" },
   { label: "How it works", href: "#how" },
+  { label: "Features", href: "#features" },
   { label: "Pricing", href: "#pricing" },
-  { label: "Testimonials", href: "#testimonials" },
+  { label: "Customers", href: "#testimonials" },
 ];
 
 export function Navbar() {
@@ -35,12 +36,7 @@ export function Navbar() {
       )}
     >
       <nav className="container flex h-16 items-center justify-between">
-        <a href="#" className="flex items-center gap-2 font-semibold">
-          <span className="grid h-8 w-8 place-items-center rounded-lg bg-gradient-to-br from-indigo-500 to-violet-600 text-white">
-            <Sparkles className="h-4 w-4" />
-          </span>
-          Nova
-        </a>
+        <Brand href="/" />
 
         <div className="hidden items-center gap-8 md:flex">
           {links.map((l) => (
@@ -60,7 +56,7 @@ export function Navbar() {
             href="#pricing"
             className="rounded-lg bg-slate-900 px-4 py-2 text-sm font-medium text-white transition hover:opacity-90 dark:bg-white dark:text-slate-900"
           >
-            Get started
+            Book a call
           </a>
         </div>
 
@@ -95,7 +91,7 @@ export function Navbar() {
               onClick={() => setOpen(false)}
               className="mt-2 rounded-lg bg-slate-900 px-4 py-2 text-center text-sm font-medium text-white dark:bg-white dark:text-slate-900"
             >
-              Get started
+              Book a call
             </a>
           </div>
         </div>

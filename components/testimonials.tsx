@@ -2,9 +2,9 @@ import { Reveal } from "@/components/reveal";
 import { Star } from "lucide-react";
 
 const testimonials = [
-  { quote: "Nova replaced four tools and cut our release cycle in half. The team actually enjoys the workflow now.", name: "Sarah Chen", role: "VP Engineering, Globex" },
-  { quote: "The AI automations are shockingly good. We shipped in a week what used to take a quarter.", name: "Marcus Reed", role: "Founder, Initech" },
-  { quote: "Beautiful UI, blazing fast, and the analytics are exactly what our leadership wanted.", name: "Priya Nair", role: "Head of Ops, Hooli" },
+  { quote: "FlowForge automated our order-to-fulfilment process end to end. What our ops team spent 15 hours a week on now runs itself.", name: "Sarah Chen", role: "Head of Ops, Northwind" },
+  { quote: "They connected our CRM, Stripe, and a custom internal API in days. The managed hosting means we never think about uptime.", name: "Marcus Reed", role: "Founder, Latchpad" },
+  { quote: "Usage-based pricing is exactly right for us — we only pay for what runs, and the run-history dashboard is genuinely useful.", name: "Priya Nair", role: "CTO, Kettle & Co." },
 ];
 
 export function Testimonials() {
@@ -12,8 +12,8 @@ export function Testimonials() {
     <section id="testimonials" className="py-24">
       <div className="container">
         <Reveal className="mx-auto max-w-2xl text-center">
-          <p className="text-sm font-semibold uppercase tracking-wider text-indigo-500">Testimonials</p>
-          <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Teams love building on Nova</h2>
+          <p className="text-sm font-semibold uppercase tracking-wider text-indigo-500">Customers</p>
+          <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Teams that stopped doing it by hand</h2>
         </Reveal>
 
         <div className="mt-14 grid gap-6 md:grid-cols-3">

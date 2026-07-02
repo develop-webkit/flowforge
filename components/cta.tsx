@@ -10,16 +10,17 @@ export function CTA() {
             <div aria-hidden className="absolute inset-0 bg-grid opacity-20" />
             <div className="relative">
               <h2 className="mx-auto max-w-2xl text-3xl font-bold tracking-tight sm:text-4xl">
-                Ready to ship faster?
+                Tell us what you want to automate
               </h2>
               <p className="mx-auto mt-4 max-w-xl text-indigo-100">
-                Join thousands of teams building on Nova. Free for 14 days, no card required.
+                Book a free 20-minute scoping call. We&apos;ll tell you exactly what your workflow will
+                cost to build and run — no obligation.
               </p>
               <a
                 href="#pricing"
                 className="group mt-8 inline-flex items-center gap-2 rounded-xl bg-white px-6 py-3 font-medium text-indigo-700 transition hover:bg-indigo-50"
               >
-                Get started free
+                Book a scoping call
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </a>
             </div>
